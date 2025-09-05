@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./page2index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>hw-16</title>
+</head>
+
+<body>
+    <div class="grid-box">
+    <div class="R-text">
+        <h2>Numbers</h2>
+        <p>
+          
+          Most individuals don't think about numbers, or numerical representations of quantity, but they play a major part in everyday life. To be sure, numbers determine the time individuals will wake up in the morning, how much money employees earn per hour, what day of the year it is, and much, much more.
+          
+          Additionally, numbers impact everyday living on a much smaller scale. In the grocery store, for instance, numbers determine products' prices, the amount of a product available for purchase, how much money will need to be paid for products, and a whole lot else.
+          
+          To understand larger (and more intimidating numbers), interested persons first need to understand basic numbers, or numbers from one to ten, as they comprise each and every advanced number, or a multi-digit number that indicates a larger amount/quantity.
+          
+          The basic numbers are as follows:
+          
+          One (1)
+          
+          Example: "He purchased one watermelon from the grocery store."
+          
+             </p>
+    </div>
+    <div>
+    <div class="quiz">
+        <div class="question">Which of the following best describes numbers?</div>
+        <label class="option"><input type="radio" name="answer" value="0"> Digits</label>
+        <label class="option"><input type="radio" name="answer" value="1"> Numerical representations of quantity</label>
+        <label class="option"><input type="radio" name="answer" value="2"> Roman numerals</label>
+        <button onclick="checkAnswer()">Check the answer</button>
+        <div id="result"></div>
+      </div>
+    
+      <script>
+        function checkAnswer() {
+          const answers = document.getElementsByName('answer');
+          let selected = -1;
+          for (let i = 0; i < answers.length; i++) {
+            if (answers[i].checked) {
+              selected = answers[i].value;
+            }
+          }
+    
+          const result = document.getElementById("result");
+          if (selected == -1) {
+            result.textContent = "Answer for the question";
+          } else if (selected == 1) {
+            result.textContent = "Corect";
+            result.style.color = "green";
+          } else {
+            result.textContent = "Not corect";
+            result.style.color = "red";
+          }
+        }
+      </script>
+      </div>
+      <div>
+      <div class="quiz-2">
+        <div class="question">Why are basic numbers important?        </div>
+        <label class="option"><input type="radio" name="answer" value="0"> They are useful when reading advanced numbers</label>
+        <label class="option"><input type="radio" name="answer" value="1"> They play an important role in daily living</label>
+        <label class="option"><input type="radio" name="answer" value="2"> Both answers correct</label>
+        <button onclick="checkAnswer2()">Check the answer</button>
+        <div class="result2"></div>
+      </div>
+    
+      <script>
+        function checkAnswer2() {
+          const answers = document.getElementsByName('answer');
+          let selected = -1;
+          for (let i = 0; i < answers.length; i++) {
+            if (answers[i].checked) {
+              selected = answers[i].value;
+            }
+          }
+    
+          const result = document.getElementById("result");
+          if (selected == -1) {
+            result.textContent = "Answer for the question";
+          } else if (selected == 2) {
+            result.textContent = "Corect";
+            result.style.color = "green";
+          } else {
+            result.textContent = "Not corect";
+            result.style.color = "red";
+          }
+        }
+      </script>
+      </div>
+      <div>
+        <div class="quiz-3">
+          <div class="question">Basic numbers are best defined as:       </div>
+          <label class="option"><input type="radio" name="answer" value="0">  Simple numbers</label>
+          <label class="option"><input type="radio" name="answer" value="1">  Numbers greater than ten		</label>
+          <label class="option"><input type="radio" name="answer" value="2"> Numbers from one to ten </label>
+          <button onclick="checkAnswer3()">Check the answer</button>
+          <div class="result2"></div>
+        </div>
+      
+        <script>
+          function checkAnswer3() {
+            const answers = document.getElementsByName('answer');
+            let selected = -1;
+            for (let i = 0; i < answers.length; i++) {
+              if (answers[i].checked) {
+                selected = answers[i].value;
+              }
+            }
+      
+            const result = document.getElementById("result");
+            if (selected == -1) {
+              result.textContent = "Answer for the question";
+            } else if (selected == 2) {
+              result.textContent = "Corect";
+              result.style.color = "green";
+            } else {
+              result.textContent = "Not corect";
+              result.style.color = "red";
+            }
+          }
+        </script>
+        </div>
+        <div>
+            <div class="quiz-4">
+              <div class="question">Which of the following is not a basic number?              </div>
+              <label class="option"><input type="radio" name="answer" value="0">  6         </label>
+              <label class="option"><input type="radio" name="answer" value="1">  12 </label>
+              <label class="option"><input type="radio" name="answer" value="2"> 1        </label>
+              <button onclick="checkAnswer4()">Check the answer</button>
+              <div class="result2"></div>
+            </div>
+          
+            <script>
+              function checkAnswer4() {
+                const answers = document.getElementsByName('answer');
+                let selected = -1;
+                for (let i = 0; i < answers.length; i++) {
+                  if (answers[i].checked) {
+                    selected = answers[i].value;
+                  }
+                }
+          
+                const result = document.getElementById("result");
+                if (selected == -1) {
+                  result.textContent = "Answer for the question";
+                } else if (selected == 1) {
+                  result.textContent = "Corect";
+                  result.style.color = "green";
+                } else {
+                  result.textContent = "Not corect";
+                  result.style.color = "red";
+                }
+              }
+            </script>
+            </div>
+            <div>
+                <div class="quiz-5">
+                  <div class="question">178 can be broken down into which of the following groups of numbers?                  </div>
+                  <label class="option"><input type="radio" name="answer" value="0">   100 plus 70 plus 8	     </label>
+                  <label class="option"><input type="radio" name="answer" value="1">  160 plus 30 plus 9	</label>
+                  <label class="option"><input type="radio" name="answer" value="2">  156 plus 20 plus 5 </label>
+                  <button onclick="checkAnswer5()">Check the answer</button>
+                  <div class="result2"></div>
+                </div>
+              
+                <script>
+                  function checkAnswer5() {
+                    const answers = document.getElementsByName('answer');
+                    let selected = -1;
+                    for (let i = 0; i < answers.length; i++) {
+                      if (answers[i].checked) {
+                        selected = answers[i].value;
+                      }
+                    }
+              
+                    const result = document.getElementById("result");
+                    if (selected == -1) {
+                      result.textContent = "Answer for the question";
+                    } else if (selected == 0) {
+                      result.textContent = "Corect";
+                      result.style.color = "green";
+                    } else {
+                      result.textContent = "Not corect";
+                      result.style.color = "red";
+                    }
+                  }
+                </script>
+                </div>
+      </div>
+      <div class="the-end">
+        <H1>QBIS</H1>
+      </div>
+    
+</body>
+
+</html>
+

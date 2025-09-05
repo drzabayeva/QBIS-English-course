@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./page2index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>hw-16</title>
+</head>
+
+<body>
+    <div class="grid-box">
+    <div class="R-text">
+        <h2>My Wonderful Family</h2>
+        <p>
+            I live in a house near the mountains. I have two brothers and one sister, and I was born last. My father teaches mathematics, and my mother is a nurse at a big hospital. My brothers are very smart and work hard in school. My sister is a nervous girl, but she is very kind. My grandmother also lives with us. She came from Italy when I was two years old. She has grown old, but she is still very strong. She cooks the best food!
+
+My family is very important to me. We do lots of things together. My brothers and I like to go on long walks in the mountains. My sister likes to cook with my grandmother. On the weekends we all play board games together. We laugh and always have a good time. I love my family very much.
+        </p>
+    </div>
+    <div>
+    <div class="quiz">
+        <div class="question">My mother is a...</div>
+        <label class="option"><input type="radio" name="answer" value="0"> Doctor</label>
+        <label class="option"><input type="radio" name="answer" value="1"> Nurse</label>
+        <label class="option"><input type="radio" name="answer" value="2"> Writer</label>
+        <button onclick="checkAnswer()">Check the answer</button>
+        <div id="result"></div>
+      </div>
+    
+      <script>
+        function checkAnswer() {
+          const answers = document.getElementsByName('answer');
+          let selected = -1;
+          for (let i = 0; i < answers.length; i++) {
+            if (answers[i].checked) {
+              selected = answers[i].value;
+            }
+          }
+    
+          const result = document.getElementById("result");
+          if (selected == -1) {
+            result.textContent = "Answer for the question";
+          } else if (selected == 1) {
+            result.textContent = "Corect";
+            result.style.color = "green";
+          } else {
+            result.textContent = "Not corect";
+            result.style.color = "red";
+          }
+        }
+      </script>
+      </div>
+      <div>
+      <div class="quiz-2">
+        <div class="question">My house is near the...</div>
+        <label class="option"><input type="radio" name="answer" value="0"> City</label>
+        <label class="option"><input type="radio" name="answer" value="1"> Italy</label>
+        <label class="option"><input type="radio" name="answer" value="2"> Mountains</label>
+        <button onclick="checkAnswer2()">Check the answer</button>
+        <div class="result2"></div>
+      </div>
+    
+      <script>
+        function checkAnswer2() {
+          const answers = document.getElementsByName('answer');
+          let selected = -1;
+          for (let i = 0; i < answers.length; i++) {
+            if (answers[i].checked) {
+              selected = answers[i].value;
+            }
+          }
+    
+          const result = document.getElementById("result");
+          if (selected == -1) {
+            result.textContent = "Answer for the question";
+          } else if (selected == 2) {
+            result.textContent = "Corect";
+            result.style.color = "green";
+          } else {
+            result.textContent = "Not corect";
+            result.style.color = "red";
+          }
+        }
+      </script>
+      </div>
+      <div>
+        <div class="quiz-3">
+          <div class="question">How old was I when my grandmother came?        </div>
+          <label class="option"><input type="radio" name="answer" value="0">  Two years old          </label>
+          <label class="option"><input type="radio" name="answer" value="1">  Three years old	</label>
+          <label class="option"><input type="radio" name="answer" value="2"> Just born          </label>
+          <button onclick="checkAnswer3()">Check the answer</button>
+          <div class="result2"></div>
+        </div>
+      
+        <script>
+          function checkAnswer3() {
+            const answers = document.getElementsByName('answer');
+            let selected = -1;
+            for (let i = 0; i < answers.length; i++) {
+              if (answers[i].checked) {
+                selected = answers[i].value;
+              }
+            }
+      
+            const result = document.getElementById("result");
+            if (selected == -1) {
+              result.textContent = "Answer for the question";
+            } else if (selected == 0) {
+              result.textContent = "Corect";
+              result.style.color = "green";
+            } else {
+              result.textContent = "Not corect";
+              result.style.color = "red";
+            }
+          }
+        </script>
+        </div>
+        <div>
+            <div class="quiz-4">
+              <div class="question">On the weekends, we...            </div>
+              <label class="option"><input type="radio" name="answer" value="0">  Play board games together         </label>
+              <label class="option"><input type="radio" name="answer" value="1">  Go to a movie	</label>
+              <label class="option"><input type="radio" name="answer" value="2"> Cook pasta        </label>
+              <button onclick="checkAnswer4()">Check the answer</button>
+              <div class="result2"></div>
+            </div>
+          
+            <script>
+              function checkAnswer4() {
+                const answers = document.getElementsByName('answer');
+                let selected = -1;
+                for (let i = 0; i < answers.length; i++) {
+                  if (answers[i].checked) {
+                    selected = answers[i].value;
+                  }
+                }
+          
+                const result = document.getElementById("result");
+                if (selected == -1) {
+                  result.textContent = "Answer for the question";
+                } else if (selected == 0) {
+                  result.textContent = "Corect";
+                  result.style.color = "green";
+                } else {
+                  result.textContent = "Not corect";
+                  result.style.color = "red";
+                }
+              }
+            </script>
+            </div>
+            <div>
+                <div class="quiz-5">
+                  <div class="question">My sister is kind, but also...                </div>
+                  <label class="option"><input type="radio" name="answer" value="0">  Mean     </label>
+                  <label class="option"><input type="radio" name="answer" value="1">  Nervous</label>
+                  <label class="option"><input type="radio" name="answer" value="2"> Quiet     </label>
+                  <button onclick="checkAnswer5()">Check the answer</button>
+                  <div class="result2"></div>
+                </div>
+              
+                <script>
+                  function checkAnswer5() {
+                    const answers = document.getElementsByName('answer');
+                    let selected = -1;
+                    for (let i = 0; i < answers.length; i++) {
+                      if (answers[i].checked) {
+                        selected = answers[i].value;
+                      }
+                    }
+              
+                    const result = document.getElementById("result");
+                    if (selected == -1) {
+                      result.textContent = "Answer for the question";
+                    } else if (selected == 1) {
+                      result.textContent = "Corect";
+                      result.style.color = "green";
+                    } else {
+                      result.textContent = "Not corect";
+                      result.style.color = "red";
+                    }
+                  }
+                </script>
+                </div>
+      </div>
+      <div class="the-end">
+        <H1>QBIS</H1>
+      </div>
+    
+</body>
+
+</html>
+

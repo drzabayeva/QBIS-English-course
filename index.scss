@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    color: #333333;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1300px;
+}
+@import 'header';
+@import 'info_block';
+@import 'price-block';
+@import 'content-block';
+@import 'review-block';
+@import 'contact-block';
+@import 'footer';

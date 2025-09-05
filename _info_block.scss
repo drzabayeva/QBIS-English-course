@@ -1,0 +1,60 @@
+.info-block {
+    height: 482px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & h2 {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 36.57px;
+        margin-top: 95px;
+        margin-bottom: 60px;
+    }
+
+    & div {
+        & ol {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 134px;
+            grid-row-gap: 50px;
+            counter-reset: myCounter;
+
+            & li {
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                width: 480px;
+
+                & div {
+                    & h3 {
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 24.38px;
+                        margin-bottom: 15px;
+                    }
+
+                    & p {
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 21.02px;
+                        width: 390px;
+                    }
+
+                    
+                }
+            }
+            & li::before {
+                counter-increment: myCounter;
+                content: '0' counter(myCounter);
+                color: #333333;
+                display: contents;
+                font-size: 50px;
+                font-weight: 300;
+                line-height: 60.95px;
+                text-shadow: rgb(255, 208, 0) 2px 0px;
+            }
+        }
+        }
+}
